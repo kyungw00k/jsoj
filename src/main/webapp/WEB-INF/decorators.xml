@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE decorators>
+<decorators defaultdir="/WEB-INF/views/decorators">
+	<decorator name="main" page="main.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	<!--
+	<decorator name="popup" page="popup.jsp">
+		<pattern>/admin/problem/*</pattern>
+	</decorator>
+	-->
+	<excludes>
+		<!--<pattern>/submit*</pattern>
+        --><pattern>/_ah/*</pattern>
+		<pattern>/stats*</pattern>
+		<pattern>/dwr/*</pattern>
+		<pattern>*/popup/*</pattern>
+    </excludes>
+</decorators>

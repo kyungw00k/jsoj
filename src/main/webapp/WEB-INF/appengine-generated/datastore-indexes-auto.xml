@@ -1,0 +1,11 @@
+<!-- Indices written at Fri, 12 Nov 2010 08:35:50 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="net_jsoj_persistence_dao_Post" ancestor="false" source="auto">
+        <property name="category" direction="asc"/>
+        <property name="created" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>

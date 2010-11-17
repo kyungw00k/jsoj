@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+* html button img {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/icons/tick.png', sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/icons/cross.png', sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/oauth/twitter.png', sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/oauth/facebook.png', sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/user/facebook-user.png', sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/user/google-user.png', sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/user/twitter-user.png', sizingMethod='scale');
+}

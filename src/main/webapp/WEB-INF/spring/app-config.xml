@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+                           
+	<!--xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+http://www.directwebremoting.org/schema/spring-dwr
+http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd
+	-->
+	<!--<dwr:configuration />
+	<dwr:annotation-config />
+	<dwr:url-mapping />
+	<dwr:controller id="dwrController" debug="true" />
+	
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="alwaysUseFullPath" value="true" />
+		<property name="mappings">
+			<props>
+				<prop key="/dwr/engine.js">dwrController</prop>
+				<prop key="/dwr/util.js">dwrController</prop>
+				<prop key="/dwr/interface/**">dwrController</prop>
+				<prop key="/dwr/call/**">dwrController</prop>
+			</props>
+		</property>
+	</bean>
+	
+	--><!-- Scans the classpath of this application for @Components to deploy as 
+		beans -->
+	<context:component-scan base-package="net.jsoj.controller" />
+		
+	<!-- Configures Spring MVC -->
+	<import resource="mvc-config.xml" />
+</beans>
