@@ -1,6 +1,7 @@
 # JavaScript Online Judge
 
 ACM-ICPC like problem solving on GAE/J(Google App Engine Java)
+
 The judge system currently services solutions written in JavaScript.
 
 ## Installation
@@ -24,6 +25,13 @@ Linux and OSX:
 About the goal, please check out page below.
 [http://www.kindleit.net/maven_gae_plugin/maven-gae-plugin/plugin-info.html](http://www.kindleit.net/maven_gae_plugin/maven-gae-plugin/plugin-info.html)
 
+
+## Open Source Projects Used
+Main projects that we use as building blocks:
+
+  * twig-persist
+  * appengine-java-io http://code.google.com/p/appengine-java-io/
+  * gaevfs http://code.google.com/p/gaevfs/
 
 ## License
 
