@@ -29,19 +29,19 @@ About the goal, please check out page below.
 ## Open Source Projects Used
 Main projects that we use as building blocks:
 
-   * [http://code.google.com/appengine/](Google App Engine)
-   * [http://static.springsource.org/spring-security/site/changelog.html](Spring 3.0.5)
-   * [http://directwebremoting.org/dwr/index.html](DWR 2.0.3)
-   * [http://twitter4j.org/en/index.jsp](twitter4j-core 2.1.6)
-   * [http://code.google.com/p/urlrewritefilter/](urlrewritefilter 3.1.0)
-   * [http://www.mozilla.org/rhino/download.html](Rhino 1.7R2)
-   * [http://markdownj.org/](Markdown/j)
-   * [http://code.google.com/p/twig-persist/](twig-persist 2.0-beta3)
-   * [http://code.google.com/p/appengine-java-io/](appengine-java-io)
-   * [http://code.google.com/p/gaevfs/](gaevfs)
+   * [Google App Engine](http://code.google.com/appengine/)
+   * [Spring 3.0.5](http://static.springsource.org/spring-security/site/changelog.html)
+   * [DWR 2.0.3](http://directwebremoting.org/dwr/index.html)
+   * [twitter4j-core 2.1.6](http://twitter4j.org/en/index.jsp)
+   * [UrlRewriteFilter 3.1.0](http://code.google.com/p/urlrewritefilter/)
+   * [Rhino 1.7R2](http://www.mozilla.org/rhino/download.html)
+   * [Markdown/j](http://markdownj.org/)
+   * [twig-persist 2.0-beta3](http://code.google.com/p/twig-persist/)
+   * [appengine-java-io](http://code.google.com/p/appengine-java-io/)
+   * [gaevfs](http://code.google.com/p/gaevfs/)
 
 ## Contact
-Kyungwook, Park ([mailto:parksama@gmail.com](parksama@gmail.com), [http://twitter.com/kyungw00k](@kyungw00k))
+Kyungwook, Park ([parksama@gmail.com](mailto:parksama@gmail.com), [@kyungw00k](http://twitter.com/kyungw00k))
 
 ## License
 
