@@ -16,6 +16,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.google.appengine.api.channel.*;
+
 /**
  * @author kyungwook
  * 
@@ -23,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class IntroController {
 	final Logger logger = Logger.getLogger(getClass().getName());
+	String channel_id = null;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String top(HttpSession session, ModelMap model) {		
@@ -40,6 +43,18 @@ public class IntroController {
 		if (posts != null && posts.hasNext()) {
 			model.addAttribute("posts", posts);
 		}
+		/*
+		ChannelService channelService = ChannelServiceFactory.getChannelService();
+		channel_id = channelService.createChannel("intro");
+		
+		model.addAttribute("channel_id", channel_id);
+		
+		try {
+			channelService.sendMessage(new ChannelMessage("intro", "Hello World"));
+		} catch(Exception e) {
+			System.out.println(e.getLocalizedMessage());
+		}*/
+		
 		return "intro/top";
 	}
 

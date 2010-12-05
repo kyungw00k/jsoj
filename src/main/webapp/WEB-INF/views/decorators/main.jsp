@@ -112,7 +112,7 @@
 		<script type="text/javascript">$(document).ready(function(){$('#connect').click(function(){$.oauthpopup({path: '/login/twitter?host='+window.location.host,callback: function(){window.location.reload();}});});SyntaxHighlighter.all();$(document).pngFix();});</script>
 		<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-18133272-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
 		<%-- Tweetboard --%><%--<script type="text/javascript">var _tbdef = {user: 'jsonlinejudge'};(function(){var d = document;var tbjs = d.createElement('script'); tbjs.type = 'text/javascript';tbjs.async = true; tbjs.src = 'http://tweetboard.com/tb.js'; var tbel = d.getElementsByTagName('head')[0];if(!tbel) tbel = d.getElementsByTagName('head')[0]; tbel.appendChild(tbjs);})();</script> --%>
-		<%-- AppEngine Channel API --><%-- <script type="text/javascript" src="/_ah/channel/jsapi"></script>
+		<%--<script type="text/javascript" src="/_ah/channel/jsapi"></script>
 		<script type="text/javascript">
 			var channelId = '${channel_id}';
 			var channel = new goog.appengine.Channel(channelId);
@@ -120,7 +120,7 @@
 			socket.onmessage = function(evt) {
 				alert(evt.data);
 			};
-		</script>--%>
+		</script> --%>
 	</div>
 </body>
 </html>

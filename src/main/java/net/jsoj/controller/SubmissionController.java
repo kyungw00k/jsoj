@@ -29,11 +29,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.google.appengine.api.labs.taskqueue.Queue;
-import com.google.appengine.api.labs.taskqueue.QueueFactory;
-import com.google.appengine.api.labs.taskqueue.TaskHandle;
-import com.google.appengine.api.labs.taskqueue.TaskOptions;
-import com.google.appengine.api.labs.taskqueue.TaskOptions.Method;
+import com.google.appengine.api.taskqueue.Queue;
+import com.google.appengine.api.taskqueue.QueueFactory;
+import com.google.appengine.api.taskqueue.TaskHandle;
+import com.google.appengine.api.taskqueue.TaskOptions;
+import com.google.appengine.api.taskqueue.TaskOptions.Method;
 
 /**
  * 문제 제출하기
@@ -127,7 +127,7 @@ public class SubmissionController {
 						+ queueIndex);
 				try {
 					th = queue.add(TaskOptions.Builder
-							.url("/submission/" + submission.getId())
+							.withUrl("/submission/" + submission.getId())
 							.method(Method.PUT).countdownMillis(2000));
 				} catch (Exception e) {
 					logger.warning(e.getMessage());

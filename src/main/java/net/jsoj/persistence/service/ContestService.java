@@ -15,11 +15,11 @@ import net.jsoj.persistence.dao.SubmissionStatus;
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.Query.FilterOperator;
 import com.google.appengine.api.datastore.Query.SortDirection;
-import com.google.appengine.api.labs.taskqueue.Queue;
-import com.google.appengine.api.labs.taskqueue.QueueFactory;
-import com.google.appengine.api.labs.taskqueue.TaskHandle;
-import com.google.appengine.api.labs.taskqueue.TaskOptions;
-import com.google.appengine.api.labs.taskqueue.TaskOptions.Method;
+import com.google.appengine.api.taskqueue.Queue;
+import com.google.appengine.api.taskqueue.QueueFactory;
+import com.google.appengine.api.taskqueue.TaskHandle;
+import com.google.appengine.api.taskqueue.TaskOptions;
+import com.google.appengine.api.taskqueue.TaskOptions.Method;
 
 public class ContestService {
 	final static Logger logger = Logger.getLogger(ContestService.class.getName());
@@ -163,7 +163,7 @@ public class ContestService {
 				queue = QueueFactory.getQueue("submission-queue-"+queueIndex);
 				try {
 					th = queue.add(TaskOptions.Builder
-							.url("/contest/" + submission.getId())
+							.withUrl("/contest/" + submission.getId())
 							.method(Method.PUT).countdownMillis(2000));
 				} catch(Exception e) {
 					logger.warning(e.getMessage());
